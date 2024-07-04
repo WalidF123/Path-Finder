@@ -1,0 +1,44 @@
+.Code {
+    padding: 20px;
+    border-radius: 0.5em;
+    /* width: 800px; */
+    width: 55vw;
+    margin: 5px 0;
+}
+
+code {
+    color: white;
+}
+
+pre, code, .token, .Code {
+    background-color: #2a2b2b;
+}
+
+.comment {
+    color: #02be8e;
+}
+
+.keyword {
+    color: red;
+}
+
+.class-name {
+    /* color: rgb(162, 14, 162); */
+    color: #b6a1ff;
+}
+
+.function {
+    color: yellow;
+}
+
+.operator {
+    color: #0aced9;
+}
+
+.punctuation {
+    color: #0aced9;
+}
+
+.string {
+    color: #02be8e;
+}

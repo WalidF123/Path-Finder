@@ -1,0 +1,54 @@
+:root {
+
+  --PRIMARY_color: #0B8BBE;
+  --SECONDARY_color: #001b53;
+  --HIGHLIGHT_color: orange;
+  --BACKGROUND_color_LIGHT: whitesmoke;
+  --BACKGROUND_color_DARK: #283748;
+
+  --START_color: #04633F;
+  --END_color: #880537;
+  --MIDDLE_color: purple;
+
+  --AIR_color: whitesmoke;
+  --AIR_border_color: lightblue;
+
+  --WALL_color: #001b53;
+
+  --VISITED_color_1: #29D693;
+  --VISITED_color_2: #d6296c;
+
+  --PATH_color: #0B8BBE;
+  
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: monospace;
+
+  /* add font here */
+}
+
+button {
+  display: flex;
+  align-items: center;
+  border: none;
+
+  margin: 5px;
+  padding: 10px 16px;
+  max-height: 35px;
+  /* border: 3px solid var(--PRIMARY_color); */
+  border-radius: 5px;
+
+
+  background-color: var(--PRIMARY_color);
+  color: white;
+  
+}
+
+button:hover {
+  cursor: pointer;
+}

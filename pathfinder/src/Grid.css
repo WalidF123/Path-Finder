@@ -1,0 +1,239 @@
+/* start nav row 3 */
+
+.grid_buttons_container {
+    background-color: var(--BACKGROUND_color_DARK);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100vw;
+    max-width: 1500px;
+    padding: 10px 0 20px 0;
+
+    background-color: var(--BACKGROUND_color_DARK);
+}
+
+
+.col_1_btns,
+.col_3_btns {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.col_2_btns {
+    display: flex;
+    justify-content: center;
+    flex: 2 1 0;
+}
+
+.search_btn {
+    background-color: var(--VISITED_color_1);
+}
+
+.maze_btn {
+    background-color: var(--SECONDARY_color);
+}
+
+.clear_btn {
+    background-color: var(--END_color);
+}
+
+.undo_btn img {
+    height: 20px;
+    filter: brightness(0) invert(1);  
+}
+/* end of nav row 3 */
+
+.Grid_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--BACKGROUND_color_LIGHT);
+}
+
+.Grid_container p {
+    margin: 1.5rem 0;
+}
+
+.Grid {
+    width: fit-content;
+    margin-bottom: 3rem;
+    background-color: var(--BACKGROUND_color_LIGHT);
+}
+
+.Grid_Row {
+    display: flex;
+}
+
+
+.Grid_Cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+  
+  
+.AIR {
+    border: 0.5px solid var(--AIR_border_color);
+    background-color: var(--AIR_color);
+}
+
+
+.WEIGHTED {    
+    color: black;
+}
+
+.WEIGHTED_Animated {
+    animation: animate_weights 0.5s ease-in-out 0s;
+}
+
+.WALL_Animated {
+    animation: animate_walls 0.5s ease-in-out 0s;
+}
+
+
+.Visited_Animated_1 {
+    animation: animate_visited_1 1.5s ease-in 0s;
+}
+
+.Visited_Animated_2 {
+    animation: animate_visited_2 1.5s ease-in 0s;
+}
+
+.Path {
+    animation: animate_path 1.5s ease-in-out 0s;
+}
+
+.START {
+    background-color: var(--START_color);
+    border: 0.5px solid var(--START_color);
+    animation: animate_start_end 0.25s ease-in-out 0s;
+}
+
+.MIDDLE {
+    animation: animate_start_end 0.25s ease-in-out 0s;
+}
+
+.END {
+    background-color: var(--END_color);
+    border: 0.5px solid var(--END_color);
+    animation: animate_start_end 0.25s ease-in-out 0s;
+}
+
+
+@keyframes animate_start_end {
+
+    /* 0% {
+        transform: scale(0.3);
+    }
+
+    60% {
+        transform: scale(1.2);
+    } */
+
+    0% {
+        transform: scale(0.3);
+        border-radius: 50%;
+    }
+
+    60% {
+        transform: scale(1.2);
+    }
+    
+}
+
+@keyframes animate_visited_1 {
+
+    0% {
+        transform: scale(0.4);
+        background-color: #00614D;
+        border-radius: 50%;
+    }
+
+
+    50% {
+        transform: scale(1.1);
+        background-color: #008B00;
+    }
+
+    100% {
+        background-color: var(--VISITED_color_1);
+    }
+    
+    
+}
+
+@keyframes animate_visited_2 {   
+
+    0% {
+        transform: scale(0.4);
+        background-color: #610014bf;
+        border-radius: 50%;
+    }
+
+
+    50% {
+        transform: scale(1.1);
+        background-color: darkmagenta;
+    }
+
+    100% {
+        background-color: var(--VISITED_color_2);
+    }
+}
+
+@keyframes animate_path {
+
+
+    /* 50% {
+        transform: scale(0.4);
+        border-radius: 50%;
+    } */
+
+    0% {
+        transform: scale(0.3);
+        border-radius: 50%;
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+    
+}
+
+@keyframes animate_walls {
+
+    0% {
+        transform: scale(0.4);
+        border-radius: 50%;
+    }
+    
+}
+
+@keyframes animate_weights {
+
+    0% {
+        transform: scale(0.4);
+        border-radius: 50%;
+    }
+    
+}
+
+
